@@ -11,14 +11,11 @@ findMatching(driverNames)
 
 function fuzzyMatch(arr, str){
     return arr.filter(drivers => drivers[0] === str[0] )
-
 };
 fuzzyMatch(driverNames,"bobby")
 
-function matchName(arr, str){
-    return arr.filter(drivers => 
-        return drivers.name === str
-      })
 
+function matchName(arr, str){
+    return arr.filter(drivers =>  drivers.name === str )
 };
 matchName(driverNames)
