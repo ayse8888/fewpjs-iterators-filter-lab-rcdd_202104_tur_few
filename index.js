@@ -17,4 +17,4 @@ console.log(fuzzyMatch(driverNames,"bobby"))
 const matchName = (arr, str) => {
     return arr.filter(drivers => driverName.name === str )
 };
-
+matchName(driverNames)
