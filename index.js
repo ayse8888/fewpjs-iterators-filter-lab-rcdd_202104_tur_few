@@ -8,9 +8,15 @@ console.log(findMatching(driverNames))
 findMatching(driverNames)
 
 
-function fuzzyMatch(array, name){    return array.filter(driverName => {return driverName[0] === name[0] })
+const fuzzyMatch= (arr, str) => {    
+  return arr.filter(drivers => drivers[0] === str[0] )
 };
-
 fuzzyMatch(driverNames,"bobby")
 console.log(fuzzyMatch(driverNames,"bobby"))
+
+const matchName = (arr, str) => {
+    return arr.filter(driverName => driverName.name === name
+      })
+
+};
 
