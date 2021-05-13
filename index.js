@@ -16,7 +16,7 @@ function fuzzyMatch(arr, str){
 fuzzyMatch(driverNames,"bobby")
 
 function matchName(arr, str){
-    return arr.filter(drivers => {
+    return arr.filter(drivers => 
         return drivers.name === str
       })
 
